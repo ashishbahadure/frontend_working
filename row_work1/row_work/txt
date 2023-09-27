@@ -1,0 +1,28 @@
+
+
+  prject name =>lab mangement system 
+
+  requirement to project and page layout
+  website dynamic 
+  only admin use in this website 
+  this softwear use manage student data 
+  1)login page /userresgistration page
+  				 
+  2)dashboard home page
+  	i)navbar horizontal navabar
+  	 a)lablogo
+  	 b)all student deatilse
+  	 	I)student name |student table name |student id| photo |email id|
+
+  3)view table strcture 
+  	30
+  	1id 
+  4)student id valid day 
+  5)automatic message sending fee pay 
+  6) empty table number 
+  7)reserve table  
+
+
+
+
+    1|2|3|4|5|6|
