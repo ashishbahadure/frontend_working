@@ -1,0 +1,161 @@
+text-property
+
+text-info
+text-primary
+text-danger
+text-secondary
+text-success 
+text-light
+text-dark 
+text-warning 
+
+
+bg-property
+bg-info
+bg-primary
+bg-danger
+bg-secondary
+bg-success 
+bg-light
+bg-dark 
+bg-warning 
+bg-transpernt 
+
+alert property
+alert alert-property
+alert alert-info
+alert alert-primary
+alert alert-danger
+alert alert-secondary
+alert alert-success 
+alert alert-light
+alert alert-dark 
+alert alert-warning 
+alert alert-transpernt 
+alert alert
+
+btn 
+btn btn-property
+btn btn-info
+btn btn-primary
+btn btn-danger
+btn btn-secondary
+btn btn-success 
+btn btn-light
+btn btn-dark 
+btn btn-warning 
+btn btn-transpernt 
+
+btn-outline-property
+btn-outline-info
+btn-outline-primary
+btn-outline-danger
+btn-outline-secondary
+btn-outline-success 
+btn-outline-light
+btn-outline-dark 
+btn-outline-warning 
+btn-outline-transpernt 
+
+btn btn-primary btn-sm
+                btn-md 
+                btn-lg 
+                btn-block 
+                 active 
+                 disbled 
+            btn-group 
+            btn-group-vertical 
+
+padding
+pt-0 pt-1 pt-2 pt-3 pt-4 pt-5
+pr-0 pr-1 pr-2 pr-3 pr-4 pr-5
+pl-0 pl-1 pl-2 pl-3 pl-4 pl-5
+pb-0 pb-1 pb-2 pb-3 pb-4 pb-5 
+
+margin  
+mt-0 mt-1 mt-2 mt-3 mt-4 mt-5
+mr-0 mr-1 mr-2 mr-3 mr-4 mr-5
+ml-0 ml-1 ml-2 ml-3 ml-4 ml-5
+mb-0 mb-1 mb-2 mb-3 mb-4 mb-5 
+
+hight and width 
+h-25    w-25 
+h-50    w-50 
+h-75    w-75 
+h-100    w-100 w-auto h-auto
+
+border 
+border border-danger 
+
+text proparty 
+text-lowercase
+text-uppercase
+text-capitalize
+fs-1 fs-1 
+fs-3 
+fs-4 
+fs-5 
+fs-6 
+fw-bold
+fw-bolder
+fw-semibold
+fw-medium
+fw-normal
+fw-light
+fw-lighter
+fst-italic
+fst-normal
+lh-1 
+lh-sm
+lh-base
+lh-lg
+text-decoration-underline
+text-decoration-line-through
+class="text-decoration-none
+
+shadow 
+shadow-lg
+list-unstiyled
+
+
+table proparty
+table 
+table-primary
+table-bordered
+table-striped
+table-hover 
+table-striped-column 
+
+
+progress proparty 
+progress 
+progress-bar 
+progress-bar-striped 
+progress-bar-animeted 
+
+img proparty 
+img-thumbnail 
+rounded 
+rounded-circle 
+
+card proparty 
+card 
+card-header 
+card-body 
+card-title 
+card-footer 
+
+dropdown proparty
+dropdown
+dropdown-menu 
+dropdown-item 
+dropdown-toggle 
+
+collapse 
+collapse 
+
+sppiner proparty 
+sppiner 
+sppiner-border
+sppiner-grow 
+
