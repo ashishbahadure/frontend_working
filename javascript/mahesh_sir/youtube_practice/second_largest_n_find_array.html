@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>second largest number</title>
+</head>
+<body>
+<script type="text/javascript">
+	// second largest number in the array 
+	const input =[1,2,-2,11,7,1]
+	const output =7 ;
+	const input1 =[1,4,7,3,4,7]
+	const output1 =4
+
+	function  secondLargest(input) {
+		let arr =[...new Set(input)].sort((a,b)=>a-b);
+		return arr[arr.length-2];
+
+	}
+
+   console.log(secondLargest(input))
+   console.log(secondLargest(input1))
+
+
+
+</script>
+</body>
+</html>

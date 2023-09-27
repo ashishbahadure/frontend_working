@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var marathi=Number( prompt("enter marathi marks"));
+        var hindi=Number( prompt("enter hindi marks"));
+        var english=Number( prompt("enter english marks"));
+        var science=Number( prompt("enter science marks"));
+        var gegrophy=Number(prompt("enter gegrophy marks"));
+        if(marathi>=35 && hindi>=35 && english>=35 && science>=35 && gegrophy>=35){
+            document.write("congrats you are pass <br>");
+      var sum=marathi+hindi+english+science+gegrophy;
+        //    document.write(sum)
+            var persantage=sum*100/500;
+            document.write(persantage+"%");
+        }
+        else{
+            document.write("better luck next time");
+        }
+    </script>
+</body>
+</html>

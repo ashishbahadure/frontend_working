@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 100%;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box" onclick="fun()" ondblclick="fun1()" oncontextmenu="fun2()" onmouseover="fun3()" onmouseout="fun4()"></div>
+    <script>
+        // MouseEvent
+        // 1.click  
+        function fun(){
+            document.getElementById("box").style.background="blue";
+        }
+        // 2.dblclick  
+        function fun1(){
+            document.getElementById("box").style.background="yellow";
+        }
+        // 3.contextmenu
+        function fun2(){
+            document.getElementById("box").style.background="black";
+        }
+        //4 onmouseover 
+        function fun3(){
+            document.getElementById("box").style.background="pink";
+        }
+        // 5 onmouseout
+        function fun4(){
+            document.getElementById("box").style.background="purple";
+        }
+        // 6 onmouseleave
+        function fun5(){
+            document.getElementById('box').style.background="orange"
+        }
+        // 7 onmouseenter 
+        // KeyboardEvent
+        // formevent
+        // windowevent
+    </script>
+</body>
+</html>

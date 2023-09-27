@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  onkeypress="press()" onkeydown="down()" onkeyup="up()">
+    <script>
+        function press(){
+            document.getElementsByTagName('body')[0].style.background="red";
+        }
+        function down(){
+            document.getElementsByTagName('body')[0].style.background="green";
+        }
+        function up(){
+            document.getElementsByTagName('body')[0].style.background="blue"
+        }
+    </script>
+</body>
+</html>

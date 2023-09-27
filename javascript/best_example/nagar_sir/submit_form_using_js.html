@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myform">
+        <input type="text" placeholder="enter your number"><br>
+        <input type="number" placeholder="enter any number"><br>
+        <button >submit</button>
+    </form>
+    <script>
+        function fun(){
+        // document.getElementById('myform').submit();
+        }
+    </script>
+    <form id="myForm" action="/dom.html">
+        <input type="text" name="username">
+        <input type="password" name="password">
+        <button type="submit">Submit</button>
+      </form>
+<script>
+// document.getElementById("myForm").addEventListener("submit", function() {
+//   // Get the username and password from the form.
+//   const username = document.getElementById("username").value;
+//   const password = document.getElementById("password").value;
+
+//   // Validate the form data.
+//   if (username === "" || password === "") {
+//     alert("Please enter a username and password.");
+//     return;
+//   }
+
+  // Submit the form.
+  document.getElementById("myForm").submit();
+// });
+
+</script>      
+</body>
+    
+</html>

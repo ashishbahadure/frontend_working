@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="num1">
+    <button onclick="demo1()">click</button>
+    <p id="demo"></p>
+    <script>
+        function demo1(){
+            setTimeout(demo,5000)
+        }
+        
+        
+        function demo(){
+           var att=document.getElementById('num1').value;
+        //    alert(att);
+            var rem ,org=att,sum=0
+            while(att!=0)
+            {
+                rem=att%10;
+              sum=sum+rem*rem*rem;
+                att=parseInt(att/10);
+                }
+                if(sum==org){
+                    document.getElementById("demo").innerHTML = "Armstrong Number";
+                }
+                else{
+                    document.getElementById("demo").innerHTML ="Not an Armstrong number.";
+                }
+        }
+    </script>
+</body>
+</html>

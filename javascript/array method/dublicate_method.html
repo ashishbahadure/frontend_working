@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //find total duplicate elemetns from the array 
+        var arr=[10,20,30,10,40,10,20,30,50,50,90];
+
+        for(var i=0;i<arr.length;i++){
+            //   var  flag=0;
+            var count=1;
+            for(var j=i+1;j<arr.length;j++){
+                // flag=0;
+                if (arr[j]==arr[i]){
+                    // flag=1;
+                    count++;
+                    arr.splice(j--,1);
+                }
+            }
+            document.write(arr[i],'-',count,"<br>");
+            
+        }
+    </script>
+</body>
+</html>

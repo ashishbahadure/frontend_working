@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // remove all cities which starts with "p" or "P' 
+ var cities =[
+     "Pune",
+     "patna",
+     "Mumbai",
+     "jaipur",
+     "Hyderabad",
+     "pargav",
+     "pandharpur",
+     "nashik",
+ ];
+ for(var i=0;i<cities.length;i++){
+    var ch=cities[i].charAt().toLowerCase();
+    if(ch=="p"){
+        cities.splice(i--,1);
+    }
+
+ };
+ document.write(cities)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[]
+        for(i=0;i<25;i++){
+            arr[i]=i+1;
+        }
+        document.write(arr);
+        console.log(arr);
+        arr.reverse();
+        document.write("<br>"+arr);
+        console.log(arr);
+
+        var arr=[]
+        for(i=0;i<30;i++){
+            arr[i]=i+1;
+        }
+         arr.shift();
+        document.write("<br>"+arr);
+        arr.unshift(300,400,500);
+        document.write("<br>",arr);
+        arr.pop();
+        document.write("<br>"+arr);
+        arr.push(100,200,300);
+        document.write("<br>",arr); 
+
+       var a=arr.splice(3,8);
+        document.write("<br>",a);
+        var ab=a.slice();
+        document.write("<br>"+ab);
+    </script>
+</body>
+</html>

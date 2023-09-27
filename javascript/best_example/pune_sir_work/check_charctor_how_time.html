@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str='my Name is aShish i am  yzEar oLd';
+        document.write(str,"<br>")
+        var sp=str.split("");
+        for(var i=0;i<sp.length;i++){
+            count=0;
+
+            for(let j of sp ){
+                if (sp[i]==j){
+                    count++;
+                }
+
+
+            }
+            document.write(count+" : ");
+            document.write(sp[i]);
+            document.write("<br>");
+        
+        }
+    </script>
+</body>
+</html>

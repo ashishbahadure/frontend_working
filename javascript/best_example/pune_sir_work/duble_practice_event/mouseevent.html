@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body style="padding-left: 300px;" id="body" onkeypress="fun1()">
+    
+    <div class="box" id="box"  oncontextmenu="fun()"> </div>
+    
+    
+    <script>
+        function fun(){
+        // document.getElementsByTagName('div')[0].style.background="blue ";
+        // document.getElementsByquery('div')[0].style.background="blue ";
+        document.querySelector("#box").style.backgroundColor = "blue";
+        }
+        
+        function fun1(){
+        document.getElementById('body').style.background="blue ";
+            
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- onmouseover 
+    onmouseout 
+    onmouseleave 
+    onmouseenter 
+    onclick 
+    ondblclick
+    oncontaxmenu  -->

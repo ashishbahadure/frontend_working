@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+     
+    <div>
+        <img id="img" src="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg" alt="">
+
+        <button onclick="turnOnOff()">on/off</button>
+    </div>
+    <script>
+        function turnOnOff(){
+           var img=document.getElementById('img');
+          if(img.src=="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg")
+          {
+            img.src="https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg"
+            
+        }else{
+            img.src="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg"
+
+        }
+    }
+    </script>
+    
+</body>
+</html>

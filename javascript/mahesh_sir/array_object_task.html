@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="2.Gmail.css">
+	<script src="https://kit.fontawesome.com/33042e1aad.js" crossorigin="anonymous"></script>
+
+    <style>
+        .div1{
+            width: 100%;
+            display: grid;
+            background-color:rgb(231,231,231) ;
+            grid-template-columns: 300px 300px 300px 300px;
+            grid-gap: 15px;
+        }
+        .card1{
+            height: 350px;
+            padding: 15px;
+
+            border: 1px solid black;
+        }
+        .img1{
+            width: 100%;
+            height: 40%;
+            padding: 0%;
+        }
+        .fa1{
+            text-align: center;
+        }
+        .fa{
+            color:#897c7c ;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+     
+      <script>
+        var arr=[
+            obj1={
+                img:"ashish1",
+                star:"fa fa-star",
+                name:"Gift box",
+                information:"square gift box for products ",
+                price:"$14",
+                cart:"ADD TO CART"
+            },
+            obj2={
+                img:"ashish2",
+                name:"Facial CREAMS",
+                information:" mosturize and take care of your face",
+                price:"$23",
+                cart:"ADD TO CART"
+            },
+            obj3={
+                img:'ashish3',
+                name:"DUMbbell Sets",
+                information:"discover weights and exercise dumbbells",
+                price:"$17",
+                cart:"ADD TO CART"
+            },
+            obj4={
+                img:'ashish4',
+                name:"Digital camera",
+                information:" choose between DSLR mirreless",
+                price:"$314",
+                cart:"ADD TO CART"
+            },
+            obj5={
+                img:'ashish5',
+                name:"coffiee cup",
+                information:" this coffie cup come s with lead",
+                price:"$3",
+                cart:"ADD TO CART"
+            },
+            obj6={
+                img:'ashish6',
+                name:"SMARTWATCHES",
+                information:" find the best price for smart watch",
+                price:"$89",
+                cart:"ADD TO CART"
+            },
+            obj7={
+                img:'ashish7',
+                name:"Remote control",
+                information:" best usiversal remote control",
+                price:"$31",
+                cart:"ADD TO CART"
+            },
+            obj8={
+                img:'ashish8',
+                star:"fa fa-star",
+                name:"laptop",
+                information:"the best laptop details ",
+                price:"$451",
+                cart:"ADD TO CART"
+            },
+        ];
+        
+        var div=document.createElement('div');
+            div.className="div1";
+           document.body.appendChild(div)
+       
+           {arr.map((val)=>{ 
+            
+           var div1=document.createElement('div');
+           div.appendChild(div1);
+           div1.className="card1";
+           var img = document.createElement("img");
+           img.src="./images/product-image/"+val.img+".jpg";
+           div1.appendChild(img);
+           img.className='img1';
+           
+          var  div2=document.createElement('div');
+           div1.appendChild(div2);
+           div2.className="fa1";
+           var i=document.createElement('i');
+           div2.appendChild(i);
+           i.className="fa fa-star"
+           var i1=document.createElement('i');
+           div2.appendChild(i1);
+           i1.className="fa fa-star"
+           var i1=document.createElement('i');
+           div2.appendChild(i1);
+           i1.className="fa fa-star"
+           var i1=document.createElement('i');
+           div2.appendChild(i1);
+           i1.className="fa fa-star"
+           var i1=document.createElement('i');
+           div2.appendChild(i1);
+           i1.className="fa fa-star"
+
+           var underdiv=document.createElement('div');
+           div1.appendChild(underdiv);
+          underdiv.style.width="70%";
+          underdiv.style.float="left";
+          underdiv.style.height="130px"
+          var h3=document.createElement('h3')
+          underdiv.appendChild(h3);
+          h3.textContent=`${val.name}`;
+        var p=document.createElement('p');
+        underdiv.appendChild(p);
+        p.textContent=`${val.information}`
+          var underdiv1=document.createElement('div');
+          div1.appendChild(underdiv1);
+            var span = document.createElement("h2");
+            underdiv1.appendChild(span);
+            underdiv1.style.width="30%";
+            underdiv1.style.float="left";
+          underdiv1.style.height="130px"
+            span.textContent="$"+`${val.price}`;
+            span.style.fontSize = "30px"
+            
+            var footer=document.createElement('div');
+            div1.appendChild(footer);
+            footer.className="footer";
+            var foot1=document.createElement('div');
+            footer.appendChild(foot1);
+            var tag1=document.createElement('h2');
+            foot1.appendChild(tag1);
+            foot1.style.textAlign="center"
+            tag1.innerText=`${val.cart}`;
+         })}
+
+    </script>  
+</body>
+</html>

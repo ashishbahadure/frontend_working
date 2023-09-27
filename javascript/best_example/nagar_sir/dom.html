@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //domcument;
+        var c=document;
+        console.log(c);
+        var a=document.head;
+        console.log(a);
+        var b=document.body;
+        console.log(b);
+
+        // by id 
+        // get 
+    </script>
+    <button onclick="change1()">change</button>
+    <h1 id="data1">welcome</h1>
+    <h1 id="data2">Js</h1>
+    <script>
+        function change1(){
+        var b=document.getElementById('data1').innerText;
+        var c=document.getElementById('data2').innerText;
+        document.getElementById('data1').innerText=c;
+        document.getElementById('data2').innerText=b;
+
+        }
+    </script>
+    <!-- byclass  --> 
+    <h2 class="data">welcome</h2>
+    <h2 class="data1">js</h2>
+    <h2 class="data">css</h2>
+    <h2 class="data">html</h2>
+    <script>
+        var a=document.getElementsByClassName('data');
+        var a=document.getElementsByClassName('data1');
+    </script>
+    <ul>
+        <li class="da">html</li>
+        <li class="da">html</li>
+        <li class="da">html</li>
+        <li class="da">html</li>
+        <li class="da">html</li>
+        <li class="da">js</li>
+        <li class="da">css</li>
+        <li class="da">jquery</li>
+        <li class="da">python</li>
+        <li class="da">node</li>
+        <li class="da">express</li>
+    </ul>
+    <script>
+        var a = document.getElementsByClassName("da");
+        for(var i=0;i< a.length;i++){
+            document.write("<br>",a[i].innerHTML);
+        }
+    </script>
+
+    <p>welcome js</p>
+    <p> css</p>
+    <p> css</p>
+    <p> css</p>
+    <p> css</p>
+    <p> css</p>
+    <p> css</p>
+    <script>
+        //get 
+        var a=document.getElementsByTagName('p');
+        // document.getElementsByTagName('p')[1].innerHTML="welcome html"
+        for(var i=0;i<a.length;i++){
+            document.getElementsByTagName('p')[i].innerHTML="welcome";
+        }
+    </script>
+    
+</body>
+</html>

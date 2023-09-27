@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>length</h1>
+    <script>
+        var a="my name is ashish";
+        var b=a.length;
+        document.write(b);
+        
+    </script>
+    <br><br>
+    <h1>slice</h1>
+    <script>
+        var aa="my name is ashish bahadure ";
+        var cc=aa.slice(3,7);
+        document.write(cc);
+    </script>
+    <h1>substring</h1>
+    <script>
+        var bb="i am ashish i am from telangshi";
+        var dd=bb.substring(2,12);
+        document.write(dd);
+    </script>
+
+
+
+
+
+    <h1>substr</h1>
+    <script>
+        var ee="ilive in jamkhed ";
+        var ff=ee.substr();
+        document.write(ff)
+    </script>
+    <h1>replace</h1>
+    <script>
+        var gg=`
+                 fullstack deVeloper 111 222 co3 4555<br>`  ;
+        var hh=gg.replace("developer","operator");
+        var hh=gg.replace(/cO3/g,"ashish");
+        // var hh=gg.replaceAll(/fullstack/gi,"computer");
+        'ashish'==='12345'
+        document.write(hh);
+        var ab='ashish';
+        if('12344' === 12344)
+        {
+            document.write('yes')
+        }
+        else{
+            document.write('no');
+        }
+    </script>
+    <h1>toUpperCase</h1>
+    <script>
+        var as="i am ashish ";
+        var ba=as.toLocaleUpperCase();
+        document.write(ba);
+    </script>
+
+    <button onclick="fun()">click</button>
+    <p id="demo">this text is lowercase plse change uppercase</p>
+    <script>
+        function fun(){
+            var as=document.getElementById("demo").innerHTML;
+            document.getElementById('demo').innerHTML=as.toUpperCase();
+        }
+    </script>
+    
+
+
+<button onclick="fun1()">lowercase</button>
+<p id="demo1">I AM LOWECASE TEXT PLEASE CHANGE TO ME uppercase</p>
+<script>
+    function fun1(){
+        var ab=document.getElementById('demo1').innerHTML;
+        document.getElementById('demo1').innerHTML=ab.toLocaleLowerCase();
+    }
+</script>
+
+
+<button onclick="fun33()">click</button>
+<p id="demo12">i am a lowercase i change uppercase</p>
+<script>
+    function fun33(){
+    var ab=document.getElementById("demo12").innerHTML;
+    document.getElementById('demo12').innerHTML=ab.toUpperCase();
+    }
+</script> -->
+<!-- <h1>touppercase</h1>
+<button onclick="fun44()">click me</button>
+<p id="demoo">THIS TEXT IS UPPERCASE PLEASE CHANGE LOWERCASE </p>
+<script>
+    function fun44(){
+        var ab=document.getElementById('demoo').innerHTML;
+        document.getElementById("demoo").innerHTML=ab.toLowerCase();
+    }
+</script> -->
+<!-- <h1>concat</h1>
+<script>
+    var as="i am ashish";
+    var ab='i am from nagar';
+    var c=as.concat(" & ",ab);
+    document.write(c);
+</script> -->
+<!-- <h1>strim</h1> -->
+
+
+<!-- <h1>toUpperCase</h1>
+<button onclick="fun123()">click</button>
+<p id="demo12">this text is lowecase plseas change uppercase</p>
+<script>
+    function fun123(){
+    var ab=document.getElementById('demo12').innerHTML;
+    document.getElementById('demo12').innerHTML=ab.toUpperCase();
+    }
+</script> -->
+
+
+
+<!-- <h1>toLowerCase</h1>
+<script>
+    var hr="THIS TEXT IS UPPERCASE PLEASE CHANGE LOWERCASE";
+     var ht=hr.toLowerCase();
+     document.write(ht);
+</script>
+ -->
+<!-- 
+<h1>concat</h1>
+<script>
+    var ab="i am ashish";
+    var as="i am from jamkhed";
+    var bt="near by beed";
+    var result=bt.concat(" and ",as," but ",ab);
+    document.write(result);
+</script> -->
+<!-- <h1>trimEnd</h1>
+<script>
+    var ab=`          i am a      fullstack web        devloper i learn       javascript    `;
+    var ts=ab.trimEnd();
+    // document.write();
+    console.log( ab.length);
+    console.log(ts.length)
+</script> -->
+<!-- <h1>padEnd</h1>
+<script>
+    var ab=`javascript`;
+    var as=ab.padEnd(20,"           *");
+    document.write(as);
+    console.log(as.length);
+    console.log(as);
+
+</script> -->
+<!-- 
+<h1>charAt</h1>
+<script>
+    var ab=`i am a fullstack web`;
+    var ts=ab.charAt(0);
+    document.write(ts);
+</script> -->
+<!-- 
+<h1>charCodeAt</h1>
+<script>
+    var ab=` ai am@[1 fullstack web`;
+    var ts=ab.charCodeAt();
+    document.write(ts);
+</script> -->
+<!-- <h1>split</h1>
+<script>
+    var ab=` ai am@[1 fullstack web`;
+    var ts=ab.split('  ');
+    document.write(ts);
+    console.log(ts);
+</script> -->
+
+<!-- Q. Replace multiple strings with multiple other strings in JavaScript
+
+let str = "I have a Lenovo Laptop, a Honor Phone, and a Samsung Tab.";
+
+Output
+I have a Dell Laptop, a OnePlus Phone, and a Lenovo Tab. -->
+
+
+<button onclick="fun()">click</button>
+<p id="ashish">I have a Lenovo Laptop, a Honor Phone, and a Samsung Tab.</p>
+<script>
+    function fun(){
+        var dl=document.getElementById("ashish").innerHTML;
+        var stm=dl.replace('Lenovo','dell');
+        var stn=stm.replace('Honor','onePlus');
+        var stp=stn.replace("Samsung",'Lenvo');
+    document.getElementById("ashish").innerHTML=stp;
+    // document.getElementById("ash").innerHTML=dl.replaceAll("Honor","oneplus");
+    // document.getElementById("ashish").innerHTML=dl.replaceAll("Lenovo","samsung");
+    }
+</script>
+<script>
+// let str = "I have a Lenovo Laptop, a Honor Phone, and a Samsung Tab.";
+// var stm=str.replace(/Lenovo/g,'Dell');
+// var stj=stm.replace(/Honor/g,'onePlus');
+// var stk=stj.replace(/Samsung/g,'Lenvo');
+// document.write(stk);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 400px;
+        width: 100%;
+        background-color: red;
+    }
+</style>
+<body style="margin-left: 50px;">
+    <div class="box" id="box" onclick="click1()" ondblclick="click2()" oncontextmenu="click3()" onmouseover="click4()" onmouseout="click5()"></div>
+
+    <script>
+        function click1(){
+            document.getElementsByTagName('div')[0].style.background="green";
+        }
+        function click2(){
+            document.getElementById('box').style.background="yellow";
+        }
+        function click3(){
+            document.getElementById('box').style.background="black";
+
+        }
+        function click4(){
+            document.getElementById('box').style.background="aqua";
+
+        }
+        function click5(){
+            document.getElementById('box').style.background="purple";
+
+        }
+    </script>
+    <!-- <input type="number" name="" id="num1" placeholder="num1"><br><br>
+    <input type="number" name="" id="num2" placeholder="num2"><br><br>
+    <button onclick="(sum(num1.value,num2.value))">+</button>
+    <button ondblclick="(sub(num1.value,num2.value))">-</button>
+    <button>*</button><br><br>
+    <input type="number" name="" id="total" placeholder="total" readonly>
+
+
+    <script>
+        function sum(a,b){
+            var c=Number(a)+ Number(b);
+            document.getElementById('total').value=c;
+        }
+        function sub(a,b){
+            var c=Number(a)- Number(b);
+            document.getElementById('total').value=c;
+        }
+        
+    </script> -->
+
+
+    <!-- mouse event 
+    onclick 
+    dblclick 
+    mouseover 
+    contextmenu 
+    mouseout 
+    mouseleave  -->
+
+</body>
+</html>

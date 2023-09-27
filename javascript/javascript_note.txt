@@ -1,0 +1,38 @@
+three way declaration 
+inline 
+internal 
+external 
+
+run code 
+document.write 
+console.log 
+alert 
+document.getelementbyid
+confirm
+
+operator 
+arithmatic 
++,-,*,/,% 
+assignment
+=,+=,-=,/=,*=,%=;
+comparison 
+==,===,<=,>=,<,>;
+logical 
+&& || ! 
+ternary 
+ ? :
+
+conditional statment 
+if 
+if else 
+else if 
+switch case 
+
+Looping statment 
+for Loop 
+while Loop 
+do while Loop 
+ 
+
+
+

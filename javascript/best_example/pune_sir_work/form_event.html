@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin-left:40px ;">
+    <form action="keyboard_event.html" onsubmit="return confirm('are you sure')">
+        <input type="text" name="" id="name" placeholder="name" onfocus="focus1('name')" onblur="blur1('name')" onselect="select1('name')"><br><br>
+
+        <input type="email" name="" id="email" onfocus="focus1('email')" onblur="blur1('email')" onselect="select1('email')" placeholder="email"><br><br>
+        
+        <input type="tel" name="" id="mobile" onfocus="focus1('mobile')" onblur="blur1('mobile')" onselect="select1('mobile')" placeholder="mobile">
+        <button>submit</button>
+    </form>
+    <script>
+        function focus1(att){
+            document.getElementById(att).style.background="yellow";
+        }
+        function blur1(att){
+            document.getElementById(att).style.background="green";
+        }
+        function select1(att){
+            document.getElementById(att).style.background="blue";
+        }
+    </script>
+
+</body>
+</html>

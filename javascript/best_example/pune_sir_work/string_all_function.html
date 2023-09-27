@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!--1) Length function  -->
+<h2>The length() Method</h2>
+
+<p id="demo"></p>
+<script>
+var text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = text.length;
+</script>
+
+<script>
+var a="asdlfjldkjfldjlfjld";
+var b=a.length;
+document.write(b);
+</script>
+
+
+<script>
+    document.write("<br><br>***************************************************************<br>")
+</script>
+
+<h2>The slice() Method</h2>
+
+<p>The sliced (extracted) part of the string is:</p>
+
+<p id="demo1"></p>
+<script>
+    var fruit="apple,banana,kiwi";
+    var part =fruit.slice(1,13);
+    document.getElementById("demo1").innerHTML =part;
+</script>
+
+
+<script>
+    document.write("<br><br>***************************************************************<br>")
+</script>
+<h1>JavaScript String Methods</h1>
+<p>The substring() method extract a part of a string and returns the extracted parts in a new string:</p>
+
+<p id="demo2"></p>
+
+<script>
+var str = "Apple, Banana, Kiwi";
+document.getElementById("demo2").innerHTML = str.substring(17,13);
+</script>
+
+
+
+
+
+<script>
+    document.write("<br><br>***************************************************************<br>")
+</script>
+<h1>JavaScript String Methods</h1>
+<p>The substr() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+
+<p id="demo3"></p>
+
+<script>
+var str = "Apple, Banana, Kiwi";
+document.getElementById("demo3").innerHTML = str.substr(13);
+</script>
+
+<script>
+    document.write("<br><br>***************************************************************<br>")
+</script>
+<h1>JavaScript String Methods</h1>
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo4">Please visit Microsoft!</p>
+
+<script>
+function myFunction() {
+  let text = document.getElementById("demo4").innerHTML;
+  document.getElementById("demo4").innerHTML =text.replace("Microsoft","W3Schools");
+}
+</script>
+
+
+
+
+<script>
+    document.write("<br><br>***************************************************************<br>")
+</script>
+
+
+<h1>JavaScript Strings</h1>
+<h2>The replaceAll() Method</h2>
+
+<p>ES2021 intoduced the string method replaceAll().</p>
+
+<p id="demo6"></p>
+
+<script>
+var text = "I love cats. Cats are very easy to love. Cats are very popular."
+text = text.replaceAll("Cats","monkey");
+text = text.replaceAll("love","like");
+
+document.getElementById("demo6").innerHTML = text;
+</script>
+
+
+
+<script>
+    document.write("<br><br>***************************************************************<br>")
+</script>
+
+<h1>JavaScript String Methods</h1>
+<p>Convert string to upper case:</p>
+
+<button onclick="myFunction1()">Try it</button>
+
+<p id="demo7">Hello World!</p>
+
+<script>
+function myFunction1() {
+  var text = document.getElementById("demo7").innerHTML;
+  document.getElementById("demo7").innerHTML =
+  text.toUpperCase();
+}
+</script>
+
+<script>
+    document.write("<br><br>***************************************************************<br>")
+</script>
+
+<h1>JavaScript String Methods</h1>
+<p>Convert string to lower case:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo18">Hello World!</p>
+
+<script>
+function myFunction() {
+  var text = document.getElementById("demo18").innerHTML;
+  document.getElementById("demo18").innerHTML =
+  text.toLowerCase();
+}
+</script>
+
+<script>
+    document.write("<br><br>***************************************************************<br>")
+</script>
+
+<h1>JavaScript String</h1>
+<h2>The concat() Method</h2>
+
+<p>The concat() method joins two or more strings:</p>
+
+<p id="demo19"></p>
+
+<script>
+let text1 = "Hello";
+let text2 = "World!";
+let text3 = text1.concat("&",text2);
+document.getElementById("demo19").innerHTML = text3;
+</script>
+
+
+<script>
+    document.write("<br><br>***************************************************************<br>")
+</script>
+
+
+<h1>JavaScript Strings</h1>
+<h2>The trim() Method</h2>
+
+<p id="demo20"></p>
+
+<script>
+let text4 = "     Hello World!     ";
+let text5 = text4.trim();
+
+document.getElementById("demo20").innerHTML =
+"Length text1 = " + text4.length + "<br>Length text2 = " + text5.length;
+</script>
+
+<script>
+    var trim1="ashish    bahadure    jamkhed kar ";
+    var trimmed=trim1.trim()
+    document.write(trimmed)
+</script>
+
+<script>
+    document.write("<br><br>***************************************************************<br>")
+</script>
+<script>
+    var padstart1="ashish bahadure i am from telangshi jamkhed";
+    var pad1=padstart1.padStart(48,"55");
+    document.write(pad1)
+</script>
+
+
+<script>
+    document.write("<br><br>***************************************************************<br>")
+</script>
+
+
+
+<h2>The padEnd() Method</h2>
+
+<p>The padEnd() method pads a string at the end.</p>
+<p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+
+<p id="demo21"></p>
+
+<script>
+var text = "ashish bahadure";
+text = text.padEnd(23,"5599098");
+
+document.getElementById("demo21").innerHTML = text;
+</script>
+
+<script>
+    document.write("<br><br>***************************************************************<br>")
+</script>
+<h2>The charAt() Method</h2>
+<script>
+var charAt1="ashish bahadure ";
+var char1=charAt1.charAt(5);
+document.write(char1)
+</script>
+<script>
+    document.write("<br><br>***************************************************************<br>")
+</script>
+<script>
+    var charset="Ashish telangshi nagar taluka ";
+    var char44=charset.charCodeAt();
+    document.write(char44)
+</script>
+<script>
+    document.write("<br><br>***************************************************************<br>")
+</script>
+<script>
+    var split1='ashish bahadure';
+    var spli=split1.split();
+    document.write(spli);
+</script>
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body1"style="margin-left:50px" onkeypress="keypress1()" onkeydown="keypress2()" onkeyup="keypress3()">
+
+    <script>
+        function keypress1(){
+        document.getElementById('body').style.background="red";
+        }
+        function keypress2(){
+        document.getElementById('body').style.background="green";
+        }
+        function keypress3(){
+        document.getElementById('body').style.background="blue";
+        }
+    </script>
+    <input type="number" name=""placeholder="rate" onkeyup="tot(this.value,qnt.value)" id="rate"><br><br>
+    <input type="number" name="" placeholder="qnt"onkeyup="tot(rate.value,this.value)" id="qnt"><br><br>
+    <input type="number" name="" id="total" readonly>
+    
+    <script>
+            function tot(rate,qnt){
+                var c=Number(rate)*Number(qnt);
+                document.getElementById('total').value=c;
+            }
+    </script>
+
+    <!-- onkeypress
+     onkeyup 
+     onkeydown  -->
+</body>
+</html>

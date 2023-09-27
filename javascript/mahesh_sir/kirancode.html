@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards division with object array</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .parent {
+
+            width: 100%;
+            display: grid;
+            grid-template-columns: 300px 300px 300px 300px;
+            grid-gap: 15px;
+        }
+
+        .child {
+
+            border-radius: 20px;
+            height: 400px;
+            padding: 15px;
+
+            background-color: rgb(231, 231, 231);
+        }
+
+        .innerchild {
+            height: 200px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 0px 25px rgb(184, 162, 235);
+            border-radius: 20px;
+        }
+
+        img:hover {
+            box-shadow: 0px 0px 25px rgb(157, 240, 240);
+        }
+    </style>
+</head>
+
+<body></body>
+
+<script>
+    let ar = [
+
+        {
+            image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfreV64qjeYcrxOT3ASwhI4zEsvH4KnD0vluqjB3zW60D7EZxb",
+            product_name: "Gift box",
+            about: "Square gift box for product ",
+            price: "$14",
+            add_to_cart: "ADD TO CART"
+        },
+        {
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPTECItNey7HpXEaLPNi8pYnuflmaNHNhA2z3EC2gsJn1pYUpX",
+            product_name: "Facial Creams",
+            about: "Moisturize & care of your face",
+            price: "$23",
+            add_to_cart: "ADD TO CART"
+        }, {
+            image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSez9JFa7UwXGuqQ6YTcFbhnITAUmUXEW-68gMliAIfVyovP1sb",
+            product_name: "Dumbbell Sets ",
+            about: "weights and exxrcise dumbbells ",
+            price: "$17",
+            add_to_cart: "ADD TO CART"
+        },
+        {
+            image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_JYkcc-FB1PbEjvaQctue1mUwshXyMg1KiKM8FxU7B-p2pjCu",
+            product_name: "Digital Camera ",
+            about: "Choose DSLR, mirrorless ",
+            price: "$314",
+            add_to_cart: "ADD TO CART"
+        },
+        {
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaJRhb8ZTGW1DEldKK_J3_4GP3FU9qZsAgmr822mFVE2Rx-0Mi",
+            product_name: "Coffee Cup",
+            about: "This coffee cup comes with a lid  ",
+            price: "$3",
+            add_to_cart: "ADD TO CART"
+        },
+        {
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe5NEVo8tFLBUmIAIjTkiynUic4a3_UafXxw96c88CYnhKFTOC",
+            product_name: "Smartwatches ",
+            about: "find the best price for Smart watch ",
+            price: "$89",
+            add_to_cart: "ADD TO CART"
+        },
+        {
+            image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnynwwLkymcBJOaw6h8t98NOdqyLMDyOkBKNyO5eXcEsAov9Zo",
+            product_name: "Remote Control ",
+            about: "Best Universal Remote Control ",
+            price: "$31",
+            add_to_cart: "ADD TO CART"
+        },
+        {
+            image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSc3xMxhuqgJAjN1MT_Q9bETlQ5A_NoPZ3GY2s1A2ImCjqrlShr",
+            product_name: "Laptop",
+            about: "The best laptops deals ",
+            price: "$451",
+            add_to_cart: "ADD TO CART"
+        }
+    ]
+
+    var main_div = document.createElement("div")
+    main_div.className = "parent"
+
+    for (let i = 0; i < ar.length; i++) {
+        var div1 = document.createElement("div")
+        div1.className = "child"
+        main_div.appendChild(div1)
+
+        var divin = document.createElement("div")
+        image = document.createElement("img")
+        image.setAttribute("src", ar[i].image)
+        image.innerText = ar[i].image
+        divin.className = "innerchild"
+        divin.appendChild(image)
+        div1.appendChild(divin)
+
+        var span = document.createElement("h2")
+        span.innerText = ar[i].price
+        span.style.fontSize = "30px"
+        span.style.float = "right"
+        div1.appendChild(span)
+
+        var h3 = document.createElement("h3")
+        h3.innerText = ar[i].product_name
+        h3.style.fontSize = "25px"
+        div1.appendChild(h3)
+
+        var p = document.createElement("p")
+        p.innerText = ar[i].about
+        div1.appendChild(p)
+
+        var hr = document.createElement("hr")
+        hr.style.marginTop = "0px"
+        div1.appendChild(hr)
+
+        var h2 = document.createElement("h2")
+        h2.innerText = ar[i].add_to_cart
+        h2.style.textAlign = "center"
+        h2.style.fontFamily = "'Times New Roman', Times, serif"
+        div1.appendChild(h2)
+
+    }
+    document.body.appendChild(main_div)
+</script>
+</html>

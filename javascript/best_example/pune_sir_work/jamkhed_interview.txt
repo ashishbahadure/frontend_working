@@ -1,0 +1,13 @@
+what is file opreation 
+what is attribute 
+what is markup langaunge 
+what is html 
+what is union 
+what are the exit loop 
+
+my target and uncomplet point in javascript 
+1 oop lecture 
+2 string method righting ;
+3 array method righting ;
+4 and few lecture uncomplet;
+5 few lecture note uncomplet;
