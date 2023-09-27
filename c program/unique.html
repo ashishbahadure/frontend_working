@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1=[1,2,3,1];
+        let arr3=[];
+       let count=0;
+       var flag=0;
+
+        for(var i=0;i<arr1.length;i++)
+        {
+            flag=0;
+            for(var j=i+1;j<arr1.length;j++)
+            {
+                if(arr1[i]==arr1[j])
+                {
+                    arr3[count]=arr1[i];
+                    count++;
+                    //  document.write(arr1[i])
+                }
+            }
+        
+        }
+
+        for(var i=0;i<arr1.length;i++)
+        {
+              flag=0;
+            
+            for(var r=0;r<count;r++)
+            {
+
+                if(arr1[i]==arr3[r])
+                {
+                    flag=1
+                }
+
+            } 
+            if(flag==0){
+                document.write(arr1[i]);
+            }
+
+        }
+        
+    </script>
+</body>
+</html>

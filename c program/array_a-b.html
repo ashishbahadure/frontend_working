@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // arr1 and arr2 madhil common  number sodun first  arra1 print karne 
+        let arr1=[1,2,3,4,5,20,40,60];
+        let arr2=[6,7,8,9,20,40,60];
+        var flag=0;
+        for(var i=0;i<arr1.length;i++)
+        {
+            flag=0;
+            for(var j=0;j<arr2.length;j++){
+                if(arr1[i]==arr2[j])
+                {
+                    flag=1;
+                }
+            }
+            if(flag==0){
+                document.write(arr1[i]);
+            }
+        }
+    </script>
+</body>
+</html>
