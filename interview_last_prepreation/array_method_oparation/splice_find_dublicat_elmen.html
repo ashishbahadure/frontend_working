@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //find total dublicate elements from the array
+        var arr=[10,20,30,10,40,10,20,30,50,50];
+        //output
+        // 10->3 
+        // 20 ->2
+        // 30->2
+        // 40 ->1 
+        // 50 ->2
+
+        for(i=0;i<arr.length;i++){
+            var count =1;
+            for(j=i+1;j<arr.length;j++){
+                if(arr[i]==arr[j]){
+                    count++;
+                    arr.splice(j--,1);
+                }
+            }
+            console.log(arr[i] ,"=>",count,"<br>")
+        }
+        console.log("unique:",arr);
+    </script>
+
+    <script>
+        // find element in dublicate 
+        var arr=[10,20,30,20,30,40,50,60,70,70];
+        for(var i=0;i<arr.length;i++)
+        {
+            var count=1;
+            for(var j=i+1;j<arr.length;j++){
+                if(arr[i]==arr[j])
+                {
+                    count++;
+                    arr.splice(j--,1);
+                }
+            }
+            document.write(arr[i],"=>",count,"<br>")
+        }
+        console.log("unique:",arr);
+
+        
+    </script>
+    <p></p>
+    <script>
+        document.getElementsByTagName("p")[0].innerHTML="<mark>ashish</mark>"
+    </script>
+    <form action="/action_page.php">
+        <p>Please select your favorite Web language:</p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+
+      <!--   <input type="radio" id="javascript" name="fav_language" value="JavaScript"> -->
+
+
+      <select name="cars" id="cars">
+        <optgroup label="Swedish Cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </optgroup>
+        <optgroup label="German Cars">
+          
+        </optgroup>
+      </select>
+</body>
+</html>
