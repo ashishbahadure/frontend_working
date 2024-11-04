@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('hello 1')
+        console.log("hello 2 ")
+        console.log("hello 3")
+
+        function api() {
+            return new Promise((resolve,rejecct) =>{
+                setTimeout(()=>{
+                    console.log("weather data");
+                    resolve(200);
+                },2000)
+            })
+        }
+        async function getWeaterData() {
+            await api()
+            console.log("weather 1")
+        }
+
+    </script>
+</body>
+</html>
